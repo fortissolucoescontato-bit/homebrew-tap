@@ -5,21 +5,21 @@
 class KortexEngram < Formula
   desc "Persistent memory for AI coding agents. Agent-agnostic, single binary, zero dependencies."
   homepage "https://github.com/fortissolucoescontato-bit/kortex-engram"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fortissolucoescontato-bit/kortex-engram/releases/download/v0.1.0/kortex-engram_0.1.0_darwin_amd64.tar.gz"
-      sha256 "04ce4906d8cdb838af3da9f710edc84bfabc609b7edc5126d7b77fb40365e2ca"
+      url "https://github.com/fortissolucoescontato-bit/kortex-engram/releases/download/v0.1.1/kortex-engram_0.1.1_darwin_amd64.tar.gz"
+      sha256 "75dfd2537beef2ea83b78313716bbd7c4f5c26e7a03ada92e80149b264f3745f"
 
       define_method(:install) do
         bin.install "kortex-engram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fortissolucoescontato-bit/kortex-engram/releases/download/v0.1.0/kortex-engram_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7569dda9d81a9dc89b7b8d5085c05529068e67ea94529ecc3cb7e0fbbe7e9738"
+      url "https://github.com/fortissolucoescontato-bit/kortex-engram/releases/download/v0.1.1/kortex-engram_0.1.1_darwin_arm64.tar.gz"
+      sha256 "81ee77a8862e598806ef79bb873933325ac30d7299e8fb123669e4ff82f675a9"
 
       define_method(:install) do
         bin.install "kortex-engram"
@@ -29,15 +29,15 @@ class KortexEngram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fortissolucoescontato-bit/kortex-engram/releases/download/v0.1.0/kortex-engram_0.1.0_linux_amd64.tar.gz"
-      sha256 "6d0f9841dbb16a475dc5fff126e8149cac3d4732396b5d90f923458d829d7bac"
+      url "https://github.com/fortissolucoescontato-bit/kortex-engram/releases/download/v0.1.1/kortex-engram_0.1.1_linux_amd64.tar.gz"
+      sha256 "699cc413ffa176d2ab1e505935b6870038cb5da01426084d42e191d92f01b749"
       define_method(:install) do
         bin.install "kortex-engram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fortissolucoescontato-bit/kortex-engram/releases/download/v0.1.0/kortex-engram_0.1.0_linux_arm64.tar.gz"
-      sha256 "dbe71889bdaf2790af555be7ecf218caf08b8af91a7ea0e2634204e738b0fbae"
+      url "https://github.com/fortissolucoescontato-bit/kortex-engram/releases/download/v0.1.1/kortex-engram_0.1.1_linux_arm64.tar.gz"
+      sha256 "63f73dbf89a4e8f115004bcf4b0a11e8ebde120c03daa54bb8695b2dad9c61f6"
       define_method(:install) do
         bin.install "kortex-engram"
       end
